@@ -23,7 +23,7 @@ plot3(colorsRGB(1,:), colorsRGB(2,:), colorsRGB(3,:), '.');
 grid on; axis equal;
 title('RGB data points');
 xlabel('x'); ylabel('y'); zlabel('z');
-print('fig1-data-points', '-dpng', '-r300');
+print('./img/fig1-data-points', '-dpng', '-r300');
 
 %% Process data
 [ planeEqs, U, meanColorsRGB ] = minimumBoundingBox( colorsRGB );
@@ -66,19 +66,18 @@ plot3([0 U(1,3)*dR(3)]+mC(1), [0 U(2,3)*dR(3)]+mC(2), [0 U(3,3)*dR(3)]+mC(3), 'c
 hold off;
 xlabel('x'); ylabel('y'); zlabel('z');
 title('Data and its principal axis');
-print('fig2-data-points-pricipal-axis', '-dpng', '-r300');
+print('./img/fig2-data-points-pricipal-axis', '-dpng', '-r300');
 
 
 % Plot the data inside the bounding box reference frame
 figure(3);
 colorsRGBaux = inv(U)*(colorsRGB - meanColorsRGB);
-colorsRGBaux = colorsRGBaux + meanColorsRGB;
 
 plot3(colorsRGBaux(1,:), colorsRGBaux(2,:), colorsRGBaux(3,:), '.');
 grid on; axis equal;
 xlabel('x'); ylabel('y'); zlabel('z');
 title('Data in the bounding box reference frame');
-print('fig3-data-points-in-bounding-box-reference-frame', '-dpng', '-r300');
+print('./img/fig3-data-points-in-bounding-box-reference-frame', '-dpng', '-r300');
 
 
 % Data and its bounding planes
@@ -102,4 +101,4 @@ end
 hold off;
 xlabel('x'); ylabel('y'); zlabel('z');
 title('Data and its bounding planes');
-print('fig4-data-points-bounding-planes', '-dpng', '-r300');
+print('./img/fig4-data-points-bounding-planes', '-dpng', '-r300');
