@@ -9,14 +9,22 @@ Note that the demo script has a fixed random seed for replicability by the user.
 
 #### Demo Images
 
-<img src="img/fig1-data-points.png" width="250">
 *Figure 1*
- 
-<img src="img/fig2-data-points-pricipal-axis.png" width="250">
+<p align="center">
+ <img src="img/fig1-data-points.png" width="750">
+</p>
+
 *Figure 2*
+<p align="center">
+ <img src="img/fig2-data-points-pricipal-axis.png" width="750">
+</p>
 
-<img src="img/fig3-data-points-in-bounding-box-reference-frame.png" width="250">
 *Figure 3*
+<p align="center">
+ <img src="img/fig3-data-points-in-bounding-box-reference-frame.png"" width="750">
+</p>
 
-<img src="img/fig4-data-points-bounding-planes.png" width="250">
 *Figure 4*
+<p align="center">
+ <img src="img/fig4-data-points-bounding-planes.png" width="750">
+</p>
